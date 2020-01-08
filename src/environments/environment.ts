@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseHref: '/adresSerwera',
+  baseHref: 'https://swapi.co/api/',
   envName: 'DEV',
   appVersion: '1.0.0'
 };
