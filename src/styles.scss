@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Buttons Styles
+
+.btn {
+  border: 2px solid #cc0033;
+  outline: none;
+  background: #fff;
+  color: #cc0033;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin: 6px;
+  transition: 0.3s;
+
+  &:hover {
+    background: #cc0033;
+    color: #fff;
+    border: 2px solid #ffffff00;
+  }
+
+  &__fill {
+    background: #cc0033;
+    color: #fff;
+    border: 2px solid #ffffff00;
+
+    &:hover {
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.6);
+    }
+  }
+}
