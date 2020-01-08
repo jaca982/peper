@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +10,9 @@ export class HomeComponent implements OnInit {
   vsCI = false;
   vsPlayer = false;
   dropdownLabel = 'Choose Attribute';
+  dropdownOptions = ['Length', 'Crew', 'Cargo capacity', 'Cost in credits', 'Passengers'];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -22,6 +24,10 @@ export class HomeComponent implements OnInit {
       this.vsCI = false;
       this.vsPlayer = true;
     }
+  }
+
+  navigateToGametable() {
+    this.router.navigate(['/game']);
   }
 
   attributeSelect(attribute) {

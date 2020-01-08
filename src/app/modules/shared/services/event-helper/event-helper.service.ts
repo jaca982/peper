@@ -22,7 +22,6 @@ export class EventHelperService implements OnDestroy {
 
   private onDocumentClick(event: MouseEvent) {
     this.clickSubject.next(event);
-    console.log('clik');
   }
 
   ngOnDestroy() {

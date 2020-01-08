@@ -5,6 +5,25 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+//ScrollBar
+::-webkit-scrollbar {
+  border-radius: 3px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #cc0033;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #860123;
+}
+
 // Buttons Styles
 
 .btn {
@@ -22,6 +41,7 @@
     background: #cc0033;
     color: #fff;
     border: 2px solid #ffffff00;
+    cursor: pointer;
   }
 
   &__fill {

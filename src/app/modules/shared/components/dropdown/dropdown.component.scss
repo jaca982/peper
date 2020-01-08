@@ -9,6 +9,8 @@
     position: absolute;
     width: 100%;
     top: 32px;
+    max-height: 150px;
+    overflow-y: scroll;
     border: 2px solid #cc0033;
     background: #fff;
     border-radius: 12px;

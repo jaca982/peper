@@ -34,9 +34,7 @@ export class DropdownComponent implements OnInit, OnDestroy {
 
   constructor(private readonly elementRef: ElementRef, private cdr: ChangeDetectorRef, private eventHelper: EventHelperService) {}
 
-  ngOnInit() {
-    this.options = ['Option 1', 'Option 2', 'Option 3'];
-  }
+  ngOnInit() {}
 
   private addDocumentClickListner() {
     console.log('add');

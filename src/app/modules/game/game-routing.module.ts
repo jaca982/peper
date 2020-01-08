@@ -1,12 +1,16 @@
 import { HomeComponent } from './pages/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
+import { GameTableComponent } from './pages/game-table/game-table.component';
 
 export const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'game',
+    component: GameTableComponent
   }
 ];
 
@@ -14,4 +18,4 @@ export const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule {}
+export class GameRoutingModule {}
