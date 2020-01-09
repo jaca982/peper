@@ -1,0 +1,13 @@
+<div class="card card__one">
+  <div class="mask" [class.mask__show]="lose"></div>
+  <p class="name">
+    {{ cardData?.name }}
+  </p>
+  <div class="atrributes">
+    <p>Crew: {{ cardData?.crew }}</p>
+    <p>Cargo: {{ cardData?.cargo }}</p>
+    <p>Length: {{ cardData?.length }}</p>
+    <p>Cost: {{ cardData?.cost }}</p>
+    <p>Passengers: {{ cardData?.passengers }}</p>
+  </div>
+</div>

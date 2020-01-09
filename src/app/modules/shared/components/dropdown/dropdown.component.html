@@ -1,6 +1,6 @@
 <div class="dropdown">
   <button class="btn" (click)="toggleDropdown()">{{ label }}</button>
   <ul class="options-ul" *ngIf="showOptions">
-    <li *ngFor="let option of options" (click)="onSelectOption(option)">{{ option }}</li>
+    <li *ngFor="let option of options" (click)="onSelectOption(option)">{{ option.label }}</li>
   </ul>
 </div>

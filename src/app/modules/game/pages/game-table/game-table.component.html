@@ -2,25 +2,29 @@
   <div class="summary-bar">
     <div class="points">
       <p class="name">Player One:</p>
-      <p class="count count__one">3</p>
+      <p class="count count__one">{{ playerOneCounter }}</p>
     </div>
-    <div class="round-counter">
-      <p class="label">Round:</p>
-      <p class="rount-count">5</p>
+    <div class="info">
+      <p class="label">
+        Round: <span class="rount-count">{{ roundCounter }}</span>
+      </p>
+      <p class="label label__attr">
+        Battle attribute: <span class="rount-count">{{ battleAttribute?.label }}</span>
+      </p>
     </div>
     <div class="points">
-      <p class="name">Player One:</p>
-      <p class="count count__two">2</p>
+      <p class="name">{{ playerTwoLabel }}:</p>
+      <p class="count count__two">{{ playerTwoCounter }}</p>
     </div>
   </div>
   <div class="game-div">
     <div class="battlefield">
-      <div class="card card__one"></div>
+      <app-card [cardData]="card1" [lose]="card1Lose"></app-card>
       <p class="vs">VS</p>
-      <div class="card card__two"></div>
+      <app-card [cardData]="card2" [lose]="card2Lose"></app-card>
     </div>
     <div class="footer">
-      <button class="btn">Next round</button>
+      <button class="btn" (click)="startRound()">Next round</button>
       <button class="btn" (click)="navigateToHome()">Back</button>
     </div>
   </div>

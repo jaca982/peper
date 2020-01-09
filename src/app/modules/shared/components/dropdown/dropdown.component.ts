@@ -11,6 +11,7 @@ import {
 } from '@angular/core';
 import { EventHelperService } from '../../services/event-helper/event-helper.service';
 import { Subscription } from 'rxjs';
+import { DropdownOptionModel } from './models/dropdown-option';
 
 @Component({
   selector: 'app-dropdown',
@@ -23,10 +24,10 @@ export class DropdownComponent implements OnInit, OnDestroy {
   label: string;
 
   @Input()
-  options: string[];
+  options: DropdownOptionModel[];
 
   @Output()
-  selectOption: EventEmitter<string> = new EventEmitter();
+  selectOption: EventEmitter<DropdownOptionModel> = new EventEmitter();
 
   showOptions = false;
 
@@ -71,8 +72,8 @@ export class DropdownComponent implements OnInit, OnDestroy {
     }
   }
 
-  onSelectOption(option: string) {
-    this.label = option;
+  onSelectOption(option: DropdownOptionModel) {
+    this.label = option.label;
     this.selectOption.emit(option);
     this.closeDropdown();
   }

@@ -38,12 +38,21 @@
       }
     }
 
-    .round-counter {
+    .info {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       font-size: 26px;
       font-weight: bold;
+      padding-top: 10px;
+
+      .label {
+        margin: 0;
+
+        &__attr {
+          font-size: 12px;
+        }
+      }
 
       .rount-count {
         margin-left: 6px;
@@ -64,18 +73,6 @@
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      .card {
-        height: 300px;
-        width: 200px;
-        border-radius: 32px;
-
-        &__one {
-          border: 3px solid #cc0033;
-        }
-        &__two {
-          border: 3px solid #3333ff;
-        }
-      }
 
       .vs {
         font-size: 32px;
