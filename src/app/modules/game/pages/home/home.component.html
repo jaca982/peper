@@ -1,6 +1,6 @@
 <div class="homeDiv">
   <div class="content">
-    <h1>Code <span class="text-color">&</span> Peper</h1>
+    <h1 class="companyName">Code <span class="text-color">&</span> Peper</h1>
     <button class="btn" [class.btn__fill]="vsCI" (click)="selectVsOption(true)">vs Computer</button>
     <button class="btn" [class.btn__fill]="vsPlayer" (click)="selectVsOption(false)">1 vs 1</button>
     <app-dropdown [label]="dropdownLabel" [options]="dropdownOptions" (selectOption)="attributeSelect($event)"></app-dropdown>

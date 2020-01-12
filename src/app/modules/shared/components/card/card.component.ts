@@ -11,7 +11,7 @@ export class CardComponent implements OnInit {
   cardData: CardViewModel;
 
   @Input()
-  lose: CardViewModel;
+  lose: boolean;
 
   constructor() {}
 

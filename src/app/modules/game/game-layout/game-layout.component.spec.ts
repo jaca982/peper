@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { GameLayoutComponent } from './game-layout.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
-import { DashboardLayoutComponent } from './dashboard-layout.component';
-
-describe('DashboardLayoutComponent', () => {
-  let component: DashboardLayoutComponent;
-  let fixture: ComponentFixture<DashboardLayoutComponent>;
+describe('GameLayoutComponent', () => {
+  let component: GameLayoutComponent;
+  let fixture: ComponentFixture<GameLayoutComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DashboardLayoutComponent ]
-    })
-    .compileComponents();
+      declarations: [GameLayoutComponent],
+      imports: [RouterTestingModule]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardLayoutComponent);
+    fixture = TestBed.createComponent(GameLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

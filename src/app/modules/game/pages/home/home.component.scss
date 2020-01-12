@@ -15,9 +15,12 @@
   .content {
     position: relative;
     width: 300px;
-    top: -120px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .companyName {
+      margin-top: 0;
+    }
   }
 }

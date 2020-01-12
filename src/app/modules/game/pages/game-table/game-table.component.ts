@@ -45,7 +45,6 @@ export class GameTableComponent implements OnInit {
         this.playerTwoLabel = 'Player Two';
       }
       this.battleAttribute = settings.attribute;
-      console.log(this.battleAttribute);
     }
     this.startRound();
   }

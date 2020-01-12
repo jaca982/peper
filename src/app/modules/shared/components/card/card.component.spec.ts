@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CardComponent } from './card.component';
+import { By } from '@angular/platform-browser';
 
 describe('CardComponent', () => {
   let component: CardComponent;
@@ -8,9 +9,8 @@ describe('CardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardComponent ]
-    })
-    .compileComponents();
+      declarations: [CardComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +21,12 @@ describe('CardComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should add mask__show class when card lose', () => {
+    const mask: HTMLElement = fixture.debugElement.query(By.css('.mask')).nativeElement;
+    component.lose = true;
+    fixture.detectChanges();
+    expect(mask.classList).toContain('mask__show');
   });
 });
