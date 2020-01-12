@@ -38,7 +38,6 @@ export class DropdownComponent implements OnInit, OnDestroy {
   ngOnInit() {}
 
   private addDocumentClickListner() {
-    console.log('add');
     this.clickSub = this.eventHelper.click.subscribe(e => this.onDocumentClick(e));
   }
 
